@@ -12,7 +12,7 @@
         android:theme="@style/Theme.CherryGame">
         <activity android:name=".WebActivity"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".FirstActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.CherryGame.NoActionBar">
             <intent-filter>
