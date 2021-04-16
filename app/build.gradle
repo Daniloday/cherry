@@ -56,6 +56,10 @@ dependencies {
     implementation 'com.kirich1409.viewbindingpropertydelegate:viewbindingpropertydelegate:1.4.1'
     implementation 'com.kirich1409.viewbindingpropertydelegate:vbpd-noreflection:1.4.1'
 
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    implementation 'com.appsflyer:af-android-sdk:6.0.0'
     //koin
     implementation "org.koin:koin-android:2.2.2"
     implementation "org.koin:koin-androidx-viewmodel:2.2.2"
