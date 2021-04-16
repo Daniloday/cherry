@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_one">
+
+    <fragment
+        android:id="@+id/nav_one"
+        android:name="com.jevely.cherry.ui.one.OneFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_one" >
+        <action
+            android:id="@+id/action_nav_one_to_nav_game"
+            app:destination="@id/nav_game" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_game"
+        android:name="com.jevely.cherry.ui.game.GameFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_nav_game_to_nav_result"
+            app:destination="@id/nav_result" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_result"
+        android:name="com.jevely.cherry.ui.result.ResultFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_nav_result_to_nav_one"
+            app:destination="@id/nav_one" />
+    </fragment>
+    <fragment
+        android:id="@+id/addictionFragment"
+        android:name="com.jevely.cherry.ui.addiction.AddictionFragment"
+        android:label="fragment_addiction"
+        tools:layout="@layout/fragment_addiction" />
+</navigation>
